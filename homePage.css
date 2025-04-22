@@ -6,14 +6,18 @@
 .banner{
   width: 100%;
   height: 100vh;
+  /* position: relative; */
 }
 .navbar-container{
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
-  border-bottom: 0.5px solid black;
-  /* position: fixed;
-  z-index: 100; */
+  border-bottom: 0.1px solid black;
+  background-color: white;
+  position: fixed;
+  z-index: 1000; 
+  width: 100%;
+  top: 0;
 
 }
 .left-navbar ul,.right-navbar ul{
@@ -44,13 +48,120 @@
 }
 .homepage-container{
   position: relative;
-  top: 2%;
-  left: 36%;
+  transform: translateX(-50%);
+  top: 18%;
+  left: 52%;
   width: 450px;
   height: 550px;
+  margin-bottom: 100px;
 }
 .homepage-container img{
   width: 100%;
   height: 100%;
   background-size: contain;
+  z-index: 1;
+}
+.footer{
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+}
+.right ul, .left ul{
+  list-style: none;
+}
+.right ul li, .left ul li {
+  display: inline-block;
+}
+.left a{
+  text-transform: uppercase;
+  font-size: 10px;
+  text-decoration: none;
+  line-height: 0.8px;
+  letter-spacing: 0.8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.left a:hover{
+  font-weight: 600;
+}
+.right a{
+  margin-right: 10px;
+  font-weight: 200;
+  font-size: 12px;
+  line-height: 0.8px;
+  text-decoration: none;
+  cursor: text;
+}
+.right ul li a, .left ul li a{
+  color: black;
+}
+.newletter-container{
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  width: 495px;
+  border: 1px solid black;
+  height: 171px;
+  background-color:rgba(0,0,0,0.3);
+  margin-left: 100px;
+  display: none;
+}
+ .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.newletter-container .header p{
+  font-size: 10px;
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+.closeButton ul{
+  list-style: none;
+}
+.closeButton ul li{
+  display: inline-block;
+}
+.closeButton a{
+  text-decoration: none;
+  margin-right: 15px;
+  color: black;
+  font-size: 17px;
+}
+.input-field input{
+  width: 455px;
+  height: 25px;
+  outline: 1px solid;
+  border: none;
+  padding: 6px;
+  margin-left: 10px;
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: monospace;
+  font-family: 15px;
+}
+.input-field input:placeholder-shown{
+  text-transform: uppercase;
+  text-align: left;
+  font-family: monospace;
+  font-weight: bold;
+}
+.input-field input:focus{
+  font-family: monospace;
+  font-size: 15px;
+}
+.button{
+  margin-left: 10px;
+}
+.button button{
+  width: 470px;
+  height: 35px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
