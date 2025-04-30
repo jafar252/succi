@@ -16,7 +16,7 @@
   top: 0;
   width: 100%;
  box-shadow: 0px 2px 1px rgb(230, 225, 225);
- z-index: 1000;
+ z-index: 500;
  background-color: white;
 }
 .logo ul{
@@ -71,7 +71,7 @@
 }
 .homepage-image{
 position: relative;
-top: 17%;
+top: 14%;
 left: 37%;
 transform: translateX(50%);
 width: 450px;
@@ -123,4 +123,72 @@ display: inline-block;
   line-height: 17px;
   margin-left: 10px;
   cursor: text;
+}
+/* .cover{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 990;
+  background-color: rgba(0,0,0,0.4);
+} */
+.newsletter{
+  width: 620px;
+  height: 200px;
+  border:1px solid black;
+  padding: 17px;
+  position:fixed;
+  top: 35%;
+  left: 26%;
+  z-index: 1000;
+  background-color: white;
+  display: none;
+}
+.newsletter-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.newsletter-header .title{
+  font-size: 12px;
+  text-align: left;
+  margin-left: -10px;
+  font-weight: 570;
+}
+.newsletter-header .header-button ul{
+  list-style: none;
+}
+.newsletter-header .header-button ul li{
+  display: inline-block;
+}
+.newsletter-header .header-button ul li a{
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  cursor: pointer;
+}
+.body-newsletter input{
+  width: 100%;
+  padding: 8px;
+  margin-top: 30px;
+  margin-left: -10px;
+  outline: none;
+}
+.body-newsletter input:focus{
+  font-family: monospace;
+}
+.subscribe{
+  margin-top: 30px;
+}
+.subscribe button{
+  width: 100%;
+  padding:7px;
+  outline: none;
+  border: 1px solid black;
+ margin-left: -10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
