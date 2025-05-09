@@ -2,193 +2,56 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Work sans", Helvetica, Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .banner{
-  width: 100vh;
+  width: 100%;
   height: 100vh;
 }
 .navbar-container{
+  margin-top: 0;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  width: 100%;
- box-shadow: 0px 2px 1px rgb(230, 225, 225);
- z-index: 500;
- background-color: white;
-}
-.logo ul{
-  list-style: none;
-}
-.logo ul li{
-  display: inline-block;
-}
-.logo img{
+ align-items: flex-start;
   height: 65px;
-  margin-right: 30px;
-  margin-left: 15px;
-  cursor: pointer;
-}
-.left-navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.left-navbar .nav ul{
-  list-style: none;
-}
-.left-navbar .nav ul li{
-  display: inline-block;
-  padding: 18px 22px;
-}
-.left-navbar .nav ul li a{
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 17px;
-  padding: 6px 8px;
-  color: rgb(44,45,45);
-}
-.right-navbar ul{
-  list-style: none;
-}
-.right-navbar ul li{
-  display: inline-block;
-  padding: 18px 22px;
-}
-.right-navbar ul li a{
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 17px;
-  padding: 6px 8px;
-  color: rgb(44,45,45);
-}
-.left-navbar .nav ul li a:hover, .right-navbar ul li a:hover{
- font-weight: bold;
-}
-.homepage-image{
-position: relative;
-top: 14%;
-left: 37%;
-transform: translateX(50%);
-width: 450px;
-height: 550px;
-}
-.homepage-image img{
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-}
-.footer{
-  position: relative;
-  top: 22%;
-  width: 1255px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-.leftfooter-item ul{
-  list-style: none;
-}
-.leftfooter-item ul li{
-display: inline-block;
-}
-.leftfooter-item ul li a{
-  text-decoration: none;
-  color: rgb(44,45,45);
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 17px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-.leftfooter-item ul li a:hover{
-  font-weight: bold;
-}
-.rightfooter-item ul{
-  list-style: none;
-}
-.rightfooter-item ul li{
-display: inline-block;
-}
-.rightfooter-item ul li a{
-  text-decoration: none;
-  color: rgb(44,45,45);
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 17px;
-  margin-left: 10px;
-  cursor: text;
-}
-/* .cover{
+  background-color: #FFFFFF;
   position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
-  z-index: 990;
-  background-color: rgba(0,0,0,0.4);
-} */
-.newsletter{
-  width: 620px;
-  height: 200px;
-  border:1px solid black;
-  padding: 17px;
-  position:fixed;
-  top: 35%;
-  left: 26%;
-  z-index: 1000;
-  background-color: white;
-  display: none;
 }
-.newsletter-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-}
-.newsletter-header .title{
-  font-size: 12px;
-  text-align: left;
-  margin-left: -10px;
-  font-weight: 570;
-}
-.newsletter-header .header-button ul{
+.navbar-container .left-navbar ul, .right-navbar ul{
   list-style: none;
 }
-.newsletter-header .header-button ul li{
+.navbar-container .left-navbar ul li, .right-navbar ul li{
   display: inline-block;
 }
-.newsletter-header .header-button ul li a{
+.navbar-container .left-navbar ul li{
+  padding: 8px;
+}
+.right-navbar ul li{
+  padding: 8px 14px;
+}
+.navbar-container .left-navbar ul li a, .right-navbar ul li a{
   text-decoration: none;
-  font-size: 14px;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
   color: black;
   cursor: pointer;
+  transition: opacity 0.1s;
 }
-.body-newsletter input{
-  width: 100%;
-  padding: 8px;
-  margin-top: 30px;
-  margin-left: -10px;
-  outline: none;
+.navbar-container .left-navbar ul li a:hover, .right-navbar ul li a:hover{
+  opacity: 0.3;
 }
-.body-newsletter input:focus{
-  font-family: monospace;
+.home-display{
+  border: 0.1px solid black;
+  display: flex;
+  align-items: center;
 }
-.subscribe{
-  margin-top: 30px;
+.display-left{
+  width: 600px;
+  height: 440px;
 }
-.subscribe button{
-  width: 100%;
-  padding:7px;
-  outline: none;
-  border: 1px solid black;
- margin-left: -10px;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-}
+
