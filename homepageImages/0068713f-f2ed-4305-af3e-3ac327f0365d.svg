@@ -1,0 +1,7 @@
+<svg class="svg-icon" data-cart-component="bagIcon" data-cart-icon-state="inactive" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0.5" y="2.5" width="9" height="7" fill="transparent" class="bag--active"></rect>
+        <rect x="0.5" y="2.5" width="9" height="7" stroke="currentColor"></rect>
+        <rect x="0.5" y="2.5" width="9" height="7" stroke="currentColor" stroke-opacity="0.2"></rect>
+        <rect x="2.5" y="0.5" width="5" height="2" stroke="currentColor"></rect>
+        <rect x="2.5" y="0.5" width="5" height="2" stroke="currentColor" stroke-opacity="0.2"></rect>
+    </svg>
