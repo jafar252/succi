@@ -18,7 +18,7 @@
   left: 0;
   right: 0;
   background-color: white;
-  box-shadow: 1px 1px 2px rgb(152, 150, 150);
+  border-bottom: 0.1px solid rgb(198, 187, 187);
   z-index: 100;
 }
 .left-navbar ul, .right-navbar ul{

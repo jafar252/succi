@@ -1,0 +1,114 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+}
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+ border-bottom: 0.1px solid rgb(138, 134, 134);
+  z-index: 100;
+}
+.left-navbar ul, .right-navbar ul{
+  list-style: none;
+}
+.left-navbar ul li, .right-navbar ul li{
+  display: inline-block;
+  padding: 12px 14px;
+}
+.left-navbar ul li a, .right-navbar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  color: black;
+  cursor: pointer;
+  transition: 0.1s font-weight;
+}
+.left-navbar ul li a:hover, .right-navbar ul li a:hover{
+font-weight: 700;
+}
+.support{
+  margin-left: 70px;
+}
+.support-container{
+  margin-top: 20px;
+  height: 55px;
+  width: 100%;
+  border-bottom: 0.1px solid rgb(138, 134, 134);
+  /* position: fixed;
+  z-index: 100; */
+  background-color: white;
+}
+.support ul{
+  list-style: none;
+}
+.support ul li{
+  display: inline-block;
+  padding: 18px;
+}
+.support ul li a{
+text-decoration: none;
+font-size: 10px;
+line-height: 20px;
+letter-spacing: 0.3px;
+text-transform: uppercase;
+color: black;
+}
+.support ul li a:hover{
+  text-decoration: underline;
+  font-weight: 600;
+}
+.Info-area{
+  margin-top: 20px;
+ position: absolute;
+ right: 0;
+ margin-right: 25px;
+ width: 600px;
+ height: 600px;
+}
+.header-container{
+  border-bottom: 0.1px solid rgb(150, 144, 144);
+  padding-bottom: 40px;
+  padding-left: 10px;
+  padding-top: 30px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.header-container h1{
+  font-size: 21px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.questions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  border-bottom: 0.1px solid rgb(187, 182, 182);
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-top: 15px;
+  text-align: left;
+  font-weight: 500;
+  transition: all 0.15s;
+}
+.questions p:hover{
+  font-weight: 600;
+}
